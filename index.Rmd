@@ -224,6 +224,27 @@ on this problem.
 
 ## Project 1: Synthetic Lag, Multiple Pollutant Edition
 
+One approach we have experimented with (paper in some vague form of draft) is
+**extension** of the synthetic lag approach to multiple pollutants.
+
+* Estimate robust coherence, identify regions of coherence
+* Do so across multiple pollutants
+* Designate one pollutant as "primary", phase-align coherent bands
+* Designate any further pollutants as "secondary", delete coherent bands
+
+While a bit rough & ready, this approach does lead to approximately uncorrelated predictors in the GAM structure.
+
+## Uncorrelated Predictors, Concerns
+
+The predictors do end up being uncorrelated, with *some* coherence (impossible to remove it all).
+
+**Concerns:**
+
+* Does it make more sense to have a "common" (coherent) predictor - remove pieces from the individual pollutants, make a new joint series?
+* If so, what do we do with relative amplitudes?
+* What do the coefficients **mean**?
+* Does this actually make any sense?!
+
 ## Project 2: Multiple-Frequency Transfer Functions
 
 For the last two years, Dave Riegert, Glen Takahara, David J. Thomson and myself
@@ -241,6 +262,8 @@ The key objective of the modeling is to estimate the
 * short timescale association
 * between marginal pollution, after accounting for other (more important) predictors 
 * and the health effect in question
+
+## What's Important?
 
 So in the classic model, estimate association between marginal pollution of choice
 and marginal mortality counts, on a daily scale, with the marginality accounting for:
@@ -263,17 +286,20 @@ Back to the title of this talk!
 
 * I'm obviously riffing off Wigner's 1960 paper in *Communications in Pure and Applied Mathematics*
 * spectral (or spectrum!) theory is, in my opinion, equivalently effective
-* Separate but unequal (better!) perspective on natural science problems
+* Separate but unequal (better!) perspective on natural science problems, vis a vis time domain
 * Traditionally suffered from lack of performance: inconsistent estimators, not remotely robust, not equal to the task at hand
 
 Then the late 1970s occurred, and David published his 1982 paper, and things changed. 
 
-## Unreasonable Effectiveness
+## $\;$
 
 <center>
-<huge>
+<h2>
 **The Multitaper Method**
-</huge>
+</h2>
+
+<br>
+<h3>An unreasonably effective framework for building <br>strong tools and complex methodologies.</h3>
 </center>
 
 ## $\;$
@@ -283,7 +309,7 @@ Then the late 1970s occurred, and David published his 1982 paper, and things cha
 
 \
 
-http://github.com/wesleyburr
+http://github.com/wesleyburr/canssi18
 
 \
 
